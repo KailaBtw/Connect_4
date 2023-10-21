@@ -130,7 +130,7 @@ public class Board {
 			if (i < 6) {
 				//Enable these println statements to see the row, and diagonal strings
 				//System.out.println(rows[i]);
-				System.out.println(diagonalsLR[i]);
+				//System.out.println(diagonalsLR[i]);
 				//System.out.println(diagonalsRL[i]); 
 
 				
