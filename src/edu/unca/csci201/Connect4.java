@@ -82,5 +82,6 @@ public class Connect4 {
 			}
 			currentMove++;
 		} 
+		scan.close();
 	}
 }

@@ -82,7 +82,7 @@ public class Board {
 			//these are the 5 rows with 0>5 index
 			if (i<6) {
 				//iterate through our rows and store 
-				for(int j=0; j<6; j++) {
+				for(int j=0; j<7; j++) {
 					rows[i] = rows[i] + dataFrame[j][i];
 				}
 				//also capture the 3rd diagonal from the left (coming from the left corner)
@@ -122,17 +122,17 @@ public class Board {
 		for(int i=0; i<7; i++) { 
 			//Enable these println statements to see the col strings
 			//System.out.println(cols[i]);
-
+								
 			//check the Column Strings
 			if (contains(cols[i]) == true) {
 				return true;
 			}
 			if (i < 6) {
 				//Enable these println statements to see the row, and diagonal strings
-				
-				//System.out.println(diagonalsLR[i]);
+				//System.out.println(rows[i]);
+				System.out.println(diagonalsLR[i]);
 				//System.out.println(diagonalsRL[i]); 
-				System.out.println(rows[i]);
+
 				
 				//check the Row Strings
 				if (contains(rows[i]) == true) {
